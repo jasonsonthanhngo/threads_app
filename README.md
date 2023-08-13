@@ -51,7 +51,7 @@ Check out the live demo of the Thread App [here](https://threads-app-xi.vercel.a
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/jasonsonthanhngo/thread_app.git`
+1. Clone the repository: `git clone https://github.com/jasonsonthanhngo/threads_app.git`
 2. Install dependencies: `npm install`
 3. Set up your Clerk API keys and MongoDB connection.
 4. Run the app: `npm run dev`
