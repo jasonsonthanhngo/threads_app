@@ -2,8 +2,9 @@
 
 import * as z from 'zod';
 import { useForm } from 'react-hook-form';
-import { usePathname, useRouter } from 'next/navigation';
+import { useOrganization } from '@clerk/nextjs';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { usePathname, useRouter } from 'next/navigation';
 
 import {
 	Form,
@@ -16,34 +17,38 @@ import {
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 
-import { createThread } from '@/lib/actions/thread.actions';
 import { ThreadValidation } from '@/lib/validations/thread';
+import { createThread } from '@/lib/actions/thread.actions';
 
 interface Props {
 	userId: string;
 }
 
-function PostThread({ userId }: { userId: string }) {
+function PostThread({ userId }: Props) {
 	const router = useRouter();
 	const pathname = usePathname();
 
-	const form = useForm({
+	const { organization } = useOrganization();
+
+	const form = useForm<z.infer<typeof ThreadValidation>>({
 		resolver: zodResolver(ThreadValidation),
 		defaultValues: {
 			thread: '',
 			accountId: userId,
 		},
 	});
+
 	const onSubmit = async (values: z.infer<typeof ThreadValidation>) => {
 		await createThread({
 			text: values.thread,
 			author: userId,
-			communityId: null,
+			communityId: organization ? organization.id : null,
 			path: pathname,
 		});
 
 		router.push('/');
 	};
+
 	return (
 		<Form {...form}>
 			<form

@@ -23,10 +23,10 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
 			path: 'author',
 			model: User,
 		})
-		// .populate({
-		// 	path: 'community',
-		// 	model: Community,
-		// })
+		.populate({
+			path: 'community',
+			model: Community,
+		})
 		.populate({
 			path: 'children', // Populate the children field
 			populate: {
@@ -64,15 +64,15 @@ export async function createThread({
 	try {
 		connectToDB();
 
-		// const communityIdObject = await Community.findOne(
-		// 	{ id: communityId },
-		// 	{ _id: 1 }
-		// );
+		const communityIdObject = await Community.findOne(
+			{ id: communityId },
+			{ _id: 1 }
+		);
 
 		const createdThread = await Thread.create({
 			text,
 			author,
-			community: null, // Assign communityId if provided, or leave it null for personal account
+			community: communityIdObject, // Assign communityId if provided, or leave it null for personal account
 		});
 
 		// Update User model
@@ -80,12 +80,12 @@ export async function createThread({
 			$push: { threads: createdThread._id },
 		});
 
-		// if (communityIdObject) {
-		// 	// Update Community model
-		// 	await Community.findByIdAndUpdate(communityIdObject, {
-		// 		$push: { threads: createdThread._id },
-		// 	});
-		// }
+		if (communityIdObject) {
+			// Update Community model
+			await Community.findByIdAndUpdate(communityIdObject, {
+				$push: { threads: createdThread._id },
+			});
+		}
 
 		revalidatePath(path);
 	} catch (error: any) {
