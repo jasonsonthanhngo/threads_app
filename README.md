@@ -21,9 +21,9 @@ Check out the live demo of the Thread App [here](https://threads-app-xi.vercel.a
 ### Phone and Tablet Preview  
 
 <div style="display: flex;">
-  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/f71b5524-59e1-46b0-b586-a15af8f23398" alt="phone_activity" width="333"/>
-  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/357c274f-0b8f-4b1e-a7c8-5ca3f3c83741" alt="Phone_Community" width="333"/>
-  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/826533af-f56d-42a6-9141-74a7a7e1874a" alt="Phone_thread" width="333"/>
+  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/f71b5524-59e1-46b0-b586-a15af8f23398" alt="phone_activity" width="230"/>
+  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/357c274f-0b8f-4b1e-a7c8-5ca3f3c83741" alt="Phone_Community" width="230"/>
+  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/826533af-f56d-42a6-9141-74a7a7e1874a" alt="Phone_thread" width="230"/>
 </div>
 
 **<p align="center">Phone Preview</p>** 
