@@ -29,6 +29,7 @@ Check out the live demo of the Thread App [here](https://threads-app-xi.vercel.a
 **<p align="center">Phone Preview</p>** 
 
 <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/c16a0b9c-5325-46ea-b6ef-3bcb2b377196" alt="Ipad Comment" />
+
 **<p align="center">Tablet Preview</p>** 
 
 
