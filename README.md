@@ -7,6 +7,8 @@ Thread App is a dynamic social media platform designed and built using Next.js, 
 Check out the live demo of the Thread App [here](https://threads-app-xi.vercel.app/).
 
 ## Preview
+
+### Desktop Preview
 ![homepage](https://github.com/jasonsonthanhngo/threads_app/assets/131301318/8a5bcbfe-6df5-41e4-9b6d-1fdbdfa78f50)
  **<p align="center">Home Page</p>** 
 
@@ -16,6 +18,20 @@ Check out the live demo of the Thread App [here](https://threads-app-xi.vercel.a
  **<p align="center">Community</p>** 
 ![Activity](https://github.com/jasonsonthanhngo/threads_app/assets/131301318/e44ccd2f-d09d-403a-a3e3-ce621d58f44f)
  **<p align="center">Activity</p>** 
+### Phone and Tablet Preview  
+
+<div style="display: flex;">
+  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/f71b5524-59e1-46b0-b586-a15af8f23398" alt="phone_activity" width="333"/>
+  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/357c274f-0b8f-4b1e-a7c8-5ca3f3c83741" alt="Phone_Community" width="333"/>
+  <img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/826533af-f56d-42a6-9141-74a7a7e1874a" alt="Phone_thread" width="333"/>
+</div>
+
+**<p align="center">Phone Preview</p>** 
+
+<img src="https://github.com/jasonsonthanhngo/threads_app/assets/131301318/c16a0b9c-5325-46ea-b6ef-3bcb2b377196" alt="Ipad Comment" />
+**<p align="center">Tablet Preview</p>** 
+
+
 
 ## Features
 
