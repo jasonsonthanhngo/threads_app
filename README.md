@@ -44,10 +44,11 @@ Check out the live demo of the Thread App [here](https://threads-app-xi.vercel.a
 
 ## Technologies Used
 
-- Next.js: Frontend framework for building dynamic web applications with React.
-- MongoDB: NoSQL database for storing user and community data.
-- Tailwind CSS: A utility-first CSS framework for creating stylish and responsive designs.
-- Clerk: User authentication and management solution for seamless login and registration processes.
+- **Next.js:** Frontend framework for building dynamic web applications with React.
+- **MongoDB:** NoSQL database for storing user and community data.
+- **Tailwind CSS:** A utility-first CSS framework for creating stylish and responsive designs.
+- **Clerk:** User authentication and management solution for seamless login and registration processes.
+- **Vercel:** Platform for deploying web applications with ease and speed.
 
 ## Getting Started
 
